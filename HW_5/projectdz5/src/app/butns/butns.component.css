@@ -1,0 +1,31 @@
+.button-group button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #ff5aa4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #a1225c;
+}
+
+h2 {
+  color: #a1225c;
+  font-size: 36px;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+p {
+  width: 600px;
+  color: #666;
+  font-size: 16px;
+}

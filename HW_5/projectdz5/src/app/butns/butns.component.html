@@ -1,0 +1,31 @@
+<h2>*ngIf и ng-template [ngIf]</h2>
+<div class="button-group">
+  <button (click)="showVehicle('car')">Показать автомобиль</button>
+  <button (click)="showVehicle('plane')">Показать самолёт</button>
+  <button (click)="showVehicle('ship')">Показать корабль</button>
+</div>
+
+<div *ngIf="currentVehicle === 'car'">
+  <h2>Самый большой автомобиль</h2>
+  <img src="../assets/img/world-long-car.png" alt="Car Image">
+  <p>"American Dream" — это самый длинный автомобиль в мире. Это модифицированный лимузин Cadillac Eldorado 1976 года,
+    его длина более 30 метров. В автомобиле есть роскошные удобства, включая бассейн, вертолетную площадку и
+    мини-гольф.</p>
+</div>
+
+<div *ngIf="currentVehicle === 'plane'">
+  <h2>Самый большой самолёт</h2>
+  <img src="../assets/img/world-long-airplane.png" alt="Plane Image">
+  <p>Антонов Ан-225 "Мрия" держит рекорд самого большого самолета, когда-либо построенного. С размахом крыльев 88,4
+    метра и длиной 84 метра, он был разработан для перевозки тяжеловесных грузов и имеет самый большой размах крыльев
+    среди эксплуатируемых воздушных судов.</p>
+</div>
+
+<ng-template [ngIf]="currentVehicle === 'ship'">
+  <h2>Самый большой корабль</h2>
+  <img src="../assets/img/world-long-ship.png" alt="Ship Image">
+  <p>Seawise Giant, также известный как Knock Nevis, был самым большим кораблем, когда-либо построенным. Его длина
+    составляла 458 метров, и он имел самую большую водоизмещающую массу, когда-либо зарегистрированную, и использовался
+    как супертанкер.</p>
+</ng-template>
+
